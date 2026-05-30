@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="name">Dhruv Panchal</h1>
+        <div class="hamburger" id="hamburger">
+        ☰
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+<section id="Home" class="container">
+    <h3>Home</h3>
+    <div class="home-container">
+        <img src="{% static 'images/pict.jpeg' %}" alt="Dhruv Panchal">
+        <p>Hi, I'm</p>
+        <h3>Dhruv Panchal</h3>
+        <p>Web Devloper & Python Developer</p>
+        <div class="buttons">
+            <a href="{% static 'pdf/Resume.pdf' %}" id="resume-btn" class="resume-btn" target="blank">
+                <button>Resume</button>
+            </a>
+            <a href="#Contact" id="contatc-btn" class="contact-btn">
+                <button >Contact Me!</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="About" class="container">
+    <h3>About</h3>
+    <div class="about-container">
+        <p>
+    👋Hello! I'm <strong>Dhruv Panchal</strong>, a passionate IT student currently pursuing my degree and building my skills in software development.<br>
+    💻I have experience with HTML, CSS, JavaScript, Python, and Django. I enjoy creating web applications, solving programming problems, and learning new technologies.<br>
+    🎯My goal is to start my career in the IT industry as a Software Developer and continuously improve my technical and problem-solving skills.<br>
+    🚀I am currently focused on Backend Development with Python and Django while also strengthening my understanding of web development and databases.
+    </p>
+    </div>
+
+</section>
+
+<!-- Devicon CDN -->
+
+<section id="Skills" class="container">
+
+    <h2>My Skills</h2>
+    <p class="skills-description">
+        Technologies, frameworks, databases, and tools I use for web development.
+    </p>
+
+    <div class="skills-grid">
+
+        <!-- Frontend Development -->
+        <div class="category-card">
+            <h3>Frontend Development</h3>
+
+            <div class="skill-card">
+                <i class="devicon-html5-plain colored"></i>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-css3-plain colored"></i>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <a href="https://getbootstrap.com/docs/" target="_blank">Bootstrap</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-tailwindcss-original colored"></i>
+                <a href="https://tailwindcss.com/docs" target="_blank">Tailwind CSS</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-react-original colored"></i>
+                <a href="https://react.dev/" target="_blank">React.js</a>
+            </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="category-card">
+            <h3>Backend Development</h3>
+
+            <div class="skill-card">
+                <i class="devicon-python-plain colored"></i>
+                <a href="https://docs.python.org/3/" target="_blank">Python</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-django-plain"></i>
+                <a href="https://docs.djangoproject.com/en/stable/" target="_blank">Django</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-django-plain"></i>
+                <a href="https://www.django-rest-framework.org/" target="_blank">
+                    Django REST Framework
+                </a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-fastapi-plain colored"></i>
+                <a href="https://restfulapi.net/" target="_blank">REST API</a>
+            </div>
+        </div>
+
+        <!-- Database -->
+        <div class="category-card">
+            <h3>Database</h3>
+
+            <div class="skill-card">
+                <i class="devicon-sqlite-plain colored"></i>
+                <a href="https://sqlite.org/docs.html" target="_blank">SQLite</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-mysql-original colored"></i>
+                <a href="https://dev.mysql.com/doc/" target="_blank">MySQL</a>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="category-card">
+            <h3>Tools</h3>
+
+            <div class="skill-card">
+                <i class="devicon-git-plain colored"></i>
+                <a href="https://git-scm.com/doc" target="_blank">Git</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-github-original"></i>
+                <a href="https://docs.github.com/en" target="_blank">GitHub</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-vscode-plain colored"></i>
+                <a href="https://code.visualstudio.com/docs" target="_blank">VS Code</a>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-postman-plain colored"></i>
+                <a href="https://learning.postman.com/docs/" target="_blank">Postman</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="Projects" class="container">
+
+    <h2>Projects</h2>
+
+    <div class="category-card">
+
+        <h3>Personal Portfolio Website</h3>
+
+        <p>
+            This is my first web development project, built using HTML, CSS, and JavaScript.
+            Through this project, I learned responsive design, navigation menus, and portfolio development.
+            I am continuously improving my skills and will be adding more exciting projects here in the future.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="Contact" class="container">
+
+    <h2>Contact Me</h2>
+
+        <div class="contact-info">
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+918153836030">8153836030</a>
+    </p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:dhruvpanchal5110@gmail.com">
+            dhruvpanchal5110@gmail.com
+        </a>
+    </p>
+</div>
+
+    <div class="contact-container">
+
+        <form action="{% url 'submit' %}"  method="POST">
+        {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="text" name="subject" placeholder="Subject">
+
+            <textarea rows="6" name="message" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+            {% if messages %}
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+{% endif %}
+
+        </form>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+    <footer class="footer">
+
+    <h3>Dhruv Panchal</h3>
+
+    <p>
+        Web Developer | Python Developer | Django Developer
+    </p>
+    <br>
+    <div class="social-links">
+
+    <a href="https://share.google/qCgp74DtGrAH4YVcO" target="blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/dhruv-panchal-629ab7167?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/dhruv_panchal_005?utm_source=qr&igsh=MWZ0eDR2bW10OXRpbg==" target="blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+<p>
+</p>
+    <p class="copyright">
+        © 2026 Dhruv Panchal. All Rights Reserved.
+    </p>
+
+<div class="footer-details">
+    </div>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
