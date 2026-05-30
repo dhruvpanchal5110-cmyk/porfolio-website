@@ -30,6 +30,14 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+DEBUG = False
+
+ALLOWED_HOSTS = [
+    ".onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -122,6 +130,8 @@ STATIC_URL = 'static/'
 # Keep STATICFILES_DIRS empty so Django can still serve app static files.
 # STATICFILES_DIRS = [BASE_DIR / 'static']
 STATICFILES_DIRS = []
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 
