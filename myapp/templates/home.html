@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4.23">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4.24">
     <!-- DevIcons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- FontAwesome -->
@@ -48,8 +48,9 @@
                     <p class="greeting">Hi, I'm</p>
                     <h1 class="hero-name">Dhruv Panchal</h1>
                     <h2 class="hero-role">
-                        <span class="highlight">Python Developer</span> | Django Developer | Web Developer
+                        <span class="highlight">Python Developer</span> <span class="role-separator">|</span> Django Developer <span class="role-separator">|</span> Web Developer
                     </h2>
+                    <div class="hero-line"></div>
                     <p class="hero-summary">
                         Passionate IT student and backend specialist crafting scalable web applications. Dedicated to solving complex problems and building robust systems.
                     </p>
@@ -57,7 +58,7 @@
                         <a href="{% static 'pdf/Dhruv_Ashwinbhai_Panchal.pdf' %}" class="btn btn-primary" target="_blank" download>
                             <i class="fa-solid fa-download"></i> Download Resume
                         </a>
-                        <a href="#projects" class="btn btn-secondary">
+                        <a href="#projects" class="btn btn-outline">
                             <i class="fa-solid fa-code"></i> View Projects
                         </a>
                     </div>
@@ -69,7 +70,11 @@
                 </div>
                 
                 <div class="hero-visual-area">
-                    <div class="profile-glass-card">
+                    <!-- Background decorative orbs -->
+                    <div class="hero-bg-orb orb-top"></div>
+                    <div class="hero-bg-orb orb-bottom"></div>
+                    <!-- The glowing profile ring -->
+                    <div class="hero-glowing-ring">
                         <img src="{% static 'images/pict_nobg.png' %}" alt="Dhruv Panchal" class="hero-image">
                     </div>
                 </div>
