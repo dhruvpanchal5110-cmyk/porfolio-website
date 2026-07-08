@@ -11,35 +11,35 @@
 }
 
 [data-theme="light"] {
-    --bg-color: #f8fafc;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --accent-primary: #0284c7;
-    --accent-secondary: #4f46e5;
-    --glass-bg: rgba(255, 255, 255, 0.75);
-    --glass-border: rgba(255, 255, 255, 1);
-    --glass-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    --bg-color: #fdf6e3;
+    --text-primary: #383024;
+    --text-secondary: #5c5243;
+    --accent-primary: #d97736;
+    --accent-secondary: #0284c7;
+    --glass-bg: rgba(255, 252, 246, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.8);
+    --glass-shadow: 0 15px 35px rgba(56, 48, 36, 0.08);
 }
 
 [data-theme="light"] body {
     background-image: 
-        radial-gradient(circle at 0% 0%, rgba(2, 132, 199, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, rgba(79, 70, 229, 0.12) 0%, transparent 50%),
-        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+        radial-gradient(circle at 0% 0%, rgba(217, 119, 54, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(2, 132, 199, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(253, 246, 227, 0.8) 0%, transparent 100%);
 }
 
 /* Light Theme Component Overrides */
 [data-theme="light"] .navbar,
 [data-theme="light"] .nav-links.active,
 [data-theme="light"] .premium-footer {
-    background: rgba(255, 255, 255, 0.85);
-    border-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    background: rgba(253, 246, 227, 0.85);
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 30px rgba(56, 48, 36, 0.05);
 }
 
 [data-theme="light"] .profile-glass-card:hover {
-    box-shadow: 0 25px 50px rgba(2, 132, 199, 0.2), 0 0 60px rgba(79, 70, 229, 0.15);
-    border-color: rgba(2, 132, 199, 0.5);
+    box-shadow: 0 25px 50px rgba(217, 119, 54, 0.15), 0 0 60px rgba(2, 132, 199, 0.1);
+    border-color: rgba(217, 119, 54, 0.4);
 }
 
 [data-theme="light"] .btn-primary,
@@ -65,8 +65,9 @@
 [data-theme="light"] .about-tag,
 [data-theme="light"] .skill-tag,
 [data-theme="light"] .tech-stack-tags span {
-    background: rgba(2, 132, 199, 0.1);
-    border-color: rgba(2, 132, 199, 0.3);
+    background: rgba(217, 119, 54, 0.1);
+    border-color: rgba(217, 119, 54, 0.25);
+    color: var(--accent-primary);
 }
 
 [data-theme="light"] .project-placeholder i {
