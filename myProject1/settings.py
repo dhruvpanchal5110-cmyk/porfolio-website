@@ -30,8 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-DEBUG = False
-
+# DEBUG is set to True above
 ALLOWED_HOSTS = [
     ".onrender.com",
     "localhost",
@@ -62,7 +61,8 @@ MIDDLEWARE = [
 
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+if not DEBUG:
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'myProject1.urls'
 
@@ -130,7 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 # The project doesn't have a top-level /static folder.
 # Keep STATICFILES_DIRS empty so Django can still serve app static files.
 # STATICFILES_DIRS = [BASE_DIR / 'static']
