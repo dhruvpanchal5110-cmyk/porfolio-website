@@ -78,7 +78,7 @@
 [data-theme="light"] .form-group input,
 [data-theme="light"] .form-group textarea {
     background: #f8fafc;
-    border-color: #e2e8f0;
+    border-color: #f1f5f9;
     color: #1e293b;
 }
 
@@ -86,6 +86,16 @@
 [data-theme="light"] .form-group textarea:focus {
     background: #ffffff;
     border-color: #0284c7;
+}
+
+[data-theme="light"] .form-icon {
+    color: #64748b;
+}
+
+[data-theme="light"] .contact-form-wrapper {
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .about-tag,
