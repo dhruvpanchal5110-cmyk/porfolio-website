@@ -33,9 +33,29 @@
 [data-theme="light"] .navbar,
 [data-theme="light"] .nav-links.active,
 [data-theme="light"] .premium-footer {
-    background: rgba(255, 255, 255, 0.8);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.85);
+    border-color: #e2e8f0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .logo {
+    color: #0f172a;
+}
+
+[data-theme="light"] .logo span {
+    color: #0284c7;
+}
+
+[data-theme="light"] .nav-links a {
+    color: #1e293b;
+}
+
+[data-theme="light"] .nav-links a:hover {
+    color: #0284c7;
+}
+
+[data-theme="light"] .theme-toggle {
+    color: #1e293b;
 }
 
 [data-theme="light"] .profile-glass-card:hover {
@@ -119,9 +139,13 @@
 }
 
 [data-theme="light"] .nav-cta {
-    background: #e0f2fe !important;
+    background: #ffffff !important;
     color: #0284c7 !important;
-    border: none !important;
+    border: 1px solid #0284c7 !important;
+}
+
+[data-theme="light"] .nav-cta:hover {
+    background: #e0f2fe !important;
 }
 
 [data-theme="light"] .hero-name {
