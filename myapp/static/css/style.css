@@ -22,11 +22,8 @@
 }
 
 [data-theme="light"] body {
-    background-image: 
-        radial-gradient(rgba(0, 0, 0, 0.05) 3px, transparent 3px),
-        linear-gradient(180deg, #ffffff 0%, #e0f2fe 100%);
-    background-size: 30px 30px, 100% 100%;
-    background-position: -15px -15px, 0 0;
+    background-image: none;
+    background-color: #ffffff;
 }
 
 /* Light Theme Component Overrides */
@@ -177,10 +174,6 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 3px, transparent 3px);
-    background-size: 30px 30px;
-    background-position: -15px -15px;
-    background-attachment: fixed;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
