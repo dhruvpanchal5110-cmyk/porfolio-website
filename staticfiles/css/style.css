@@ -14,15 +14,15 @@
     --bg-color: #f1f5f9;
     --text-primary: #1e293b;
     --text-secondary: #475569;
-    --accent-primary: #8b5cf6;
-    --accent-secondary: #3b82f6;
+    --accent-primary: #0284c7;
+    --accent-secondary: #38bdf8;
     --glass-bg: rgba(255, 255, 255, 0.9);
     --glass-border: rgba(255, 255, 255, 1);
-    --glass-shadow: 0 10px 40px rgba(139, 92, 246, 0.08);
+    --glass-shadow: 0 10px 40px rgba(2, 132, 199, 0.08);
 }
 
 [data-theme="light"] body {
-    background-image: linear-gradient(135deg, #f5f3ff 0%, #e0f2fe 100%);
+    background-image: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
 }
 
 /* Light Theme Component Overrides */
@@ -35,15 +35,15 @@
 }
 
 [data-theme="light"] .profile-glass-card:hover {
-    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.15), 0 0 50px rgba(59, 130, 246, 0.15);
-    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 20px 50px rgba(2, 132, 199, 0.15), 0 0 50px rgba(56, 189, 248, 0.15);
+    border-color: rgba(2, 132, 199, 0.3);
 }
 
 [data-theme="light"] .btn-primary,
 [data-theme="light"] .social-icons a:hover {
     color: #fff;
-    background: #8b5cf6;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    background: #0284c7;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
 }
 
 [data-theme="light"] .social-icons a {
@@ -61,15 +61,15 @@
 [data-theme="light"] .form-group input:focus,
 [data-theme="light"] .form-group textarea:focus {
     background: #ffffff;
-    border-color: #8b5cf6;
+    border-color: #0284c7;
 }
 
 [data-theme="light"] .about-tag,
 [data-theme="light"] .skill-tag,
 [data-theme="light"] .tech-stack-tags span {
-    background: #f5f3ff;
-    border-color: #ddd6fe;
-    color: #7c3aed;
+    background: #e0f2fe;
+    border-color: #bae6fd;
+    color: #0284c7;
 }
 
 [data-theme="light"] .project-placeholder i {
