@@ -657,12 +657,26 @@ h1, h2, h3, h4 {
 
 .form-group {
     margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group .form-icon {
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form-group:focus-within .form-icon {
+    color: var(--accent-primary);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 15px;
+    padding: 15px 15px 15px 45px;
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid var(--glass-border);
     border-radius: 8px;
