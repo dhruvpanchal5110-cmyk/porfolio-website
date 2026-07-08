@@ -21,6 +21,44 @@
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
 }
 
+/* Light Theme Component Overrides */
+[data-theme="light"] .navbar,
+[data-theme="light"] .nav-links.active,
+[data-theme="light"] .premium-footer {
+    background: rgba(241, 245, 249, 0.95);
+}
+
+[data-theme="light"] .btn-primary,
+[data-theme="light"] .social-icons a:hover {
+    color: #fff;
+}
+
+[data-theme="light"] .social-icons a {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group textarea {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .form-group input:focus,
+[data-theme="light"] .form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .about-tag,
+[data-theme="light"] .skill-tag,
+[data-theme="light"] .tech-stack-tags span {
+    background: rgba(2, 132, 199, 0.1);
+    border-color: rgba(2, 132, 199, 0.3);
+}
+
+[data-theme="light"] .project-placeholder i {
+    color: rgba(0, 0, 0, 0.2);
+}
+
 * {
     margin: 0;
     padding: 0;
