@@ -613,7 +613,7 @@ h1, h2, h3, h4 {
 /* Contact Section */
 .contact-split {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 50px;
 }
 

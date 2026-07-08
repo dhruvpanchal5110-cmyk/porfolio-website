@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4.9">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4.10">
     <!-- DevIcons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- FontAwesome -->
@@ -222,24 +222,6 @@
             </div>
 
             <div class="contact-split">
-                <div class="contact-info-cards">
-                    <div class="contact-card card-glass">
-                        <i class="fa-solid fa-envelope"></i>
-                        <h4>Email Me</h4>
-                        <a href="mailto:dhruvpanchal5110@gmail.com">dhruvpanchal5110@gmail.com</a>
-                    </div>
-                    <div class="contact-card card-glass">
-                        <i class="fa-solid fa-phone"></i>
-                        <h4>Call Me</h4>
-                        <a href="tel:+918153836030">+91 8153836030</a>
-                    </div>
-                    <div class="contact-card card-glass">
-                        <i class="devicon-linkedin-plain colored"></i>
-                        <h4>LinkedIn</h4>
-                        <a href="https://www.linkedin.com/in/dhruv-panchal-629ab7167" target="_blank">Connect with me</a>
-                    </div>
-                </div>
-
                 <div class="contact-form-wrapper card-glass">
                     <form action="{% url 'submit' %}" method="POST" class="contact-form">
                         {% csrf_token %}
@@ -271,6 +253,24 @@
                             </div>
                         {% endif %}
                     </form>
+                </div>
+
+                <div class="contact-info-cards">
+                    <div class="contact-card card-glass">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email Me</h4>
+                        <a href="mailto:dhruvpanchal5110@gmail.com">dhruvpanchal5110@gmail.com</a>
+                    </div>
+                    <div class="contact-card card-glass">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Call Me</h4>
+                        <a href="tel:+918153836030">+91 8153836030</a>
+                    </div>
+                    <div class="contact-card card-glass">
+                        <i class="devicon-linkedin-plain colored"></i>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/dhruv-panchal-629ab7167" target="_blank">Connect with me</a>
+                    </div>
                 </div>
             </div>
         </section>
