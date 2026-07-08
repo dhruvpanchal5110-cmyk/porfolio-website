@@ -11,18 +11,14 @@
 }
 
 [data-theme="light"] {
-    --bg-color: #f1f5f9;
+    --bg-color: #ffffff;
     --text-primary: #1e293b;
     --text-secondary: #475569;
     --accent-primary: #0284c7;
     --accent-secondary: #38bdf8;
-    --glass-bg: rgba(255, 255, 255, 0.9);
-    --glass-border: rgba(255, 255, 255, 1);
-    --glass-shadow: 0 10px 40px rgba(2, 132, 199, 0.08);
-}
-
-[data-theme="light"] body {
-    background-image: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --glass-border: rgba(226, 232, 240, 1);
+    --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
 /* Light Theme Component Overrides */
@@ -93,9 +89,6 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
-    background-image: 
-        radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(129, 140, 248, 0.1) 0%, transparent 40%);
     background-attachment: fixed;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
