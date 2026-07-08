@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4.11">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4.12">
     <!-- DevIcons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- FontAwesome -->
@@ -22,9 +22,6 @@
     <nav class="navbar">
         <div class="nav-container">
             <h1 class="logo">Dhruv<span> Panchal</span></h1>
-            <div class="hamburger" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -32,6 +29,14 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
+            <div class="nav-controls">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -315,6 +320,30 @@
                 navLinks.classList.toggle('active');
             });
         }
+
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        
+        if (savedTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeIcon.className = 'fa-solid fa-moon';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'light') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('portfolio-theme', 'dark');
+                themeIcon.className = 'fa-solid fa-sun';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('portfolio-theme', 'light');
+                themeIcon.className = 'fa-solid fa-moon';
+            }
+        });
     </script>
 </body>
 </html>
