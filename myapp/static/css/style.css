@@ -22,9 +22,11 @@
 }
 
 [data-theme="light"] body {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.05) 3px, transparent 3px);
-    background-size: 30px 30px;
-    background-position: -15px -15px;
+    background-image: 
+        radial-gradient(rgba(0, 0, 0, 0.05) 3px, transparent 3px),
+        linear-gradient(180deg, #ffffff 0%, #e0f2fe 100%);
+    background-size: 30px 30px, 100% 100%;
+    background-position: -15px -15px, 0 0;
 }
 
 /* Light Theme Component Overrides */
@@ -80,6 +82,50 @@
 
 [data-theme="light"] .hero-image {
     background: #cce6ff;
+}
+
+[data-theme="light"] .hero-glowing-ring {
+    border: 10px solid #ffffff;
+    box-shadow: 0 15px 40px rgba(2, 132, 199, 0.15);
+}
+
+[data-theme="light"] .orb-top {
+    background: #bae6fd;
+}
+
+[data-theme="light"] .orb-bottom {
+    background: #e0f2fe;
+}
+
+[data-theme="light"] .btn-outline {
+    border-color: #0284c7;
+    color: #0284c7;
+}
+
+[data-theme="light"] .btn-outline:hover {
+    background: #e0f2fe;
+}
+
+[data-theme="light"] .hero-socials a {
+    background: #ffffff;
+    border-color: #e2e8f0;
+    color: #0284c7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .hero-socials a:hover {
+    background: #0284c7;
+    color: #ffffff;
+}
+
+[data-theme="light"] .nav-cta {
+    background: #e0f2fe !important;
+    color: #0284c7 !important;
+    border: none !important;
+}
+
+[data-theme="light"] .hero-name {
+    color: #0f172a;
 }
 
 * {
@@ -407,7 +453,7 @@ h1, h2, h3, h4 {
     object-fit: cover;
     border-radius: 50%;
     border: none;
-    background: #0f172a;
+    background: #cae8ff !important;
     transition: background 0.4s ease;
 }
 
